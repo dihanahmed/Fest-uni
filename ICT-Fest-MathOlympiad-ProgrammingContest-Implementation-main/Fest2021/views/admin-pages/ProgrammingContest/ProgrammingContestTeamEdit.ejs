@@ -1,0 +1,222 @@
+<div id="content">
+    <!---------------------------COACH-------------------------->
+
+
+    <h3>Coach Information</h3>
+    <div class="row">
+        <div class="col">
+            <!-- Name input -->
+            <div class="form-outline">
+                <input type="text" id="name_c" value="<%=team.coach.name%>" onchange="programmingParams.edit.coach.name=this.value" class="form-control"/>
+                <label class="form-label" for="name_c">Name</label>
+            </div>
+        </div>
+        <!-- Phone input -->
+        <div class="col">
+            <div class="form-outline">
+                <input type="number" id="phone_c" value="<%=team.coach.phone%>" onchange="programmingParams.edit.coach.phone=this.value" class="form-control"/>
+                <label class="form-label" for="phone_c">Phone</label>
+            </div>
+        </div>
+        <!-- Email input -->
+        <div class="col">
+            <div class="form-outline">
+                <input type="email" id="email_c"  value="<%=team.coach.email%>" onchange="programmingParams.edit.coach.email=this.value" class="form-control"/>
+                <label class="form-label" for="email_c">Email address</label>
+            </div>
+        </div>
+
+        <!-- Tshirt input -->
+        <div class="col">
+            T-Shirt Size
+            <div>
+
+                <label class="radio-inline-ts">
+                    <input type="radio" name="tsc-radio" onclick="programmingParams.edit.coach.shirt =`L`" <%if(team.coach.shirt===`L`){%> <%="checked"%> <%}%>   > L
+                </label>
+                <label class="radio-inline-ts">
+                    <input type="radio" name="tsc-radio" onclick="programmingParams.edit.coach.shirt =`XL`" <%if(team.coach.shirt===`XL`){%> <%="checked"%> <%}%>  > XL
+                </label>
+                <label class="radio-inline-ts">
+                    <input type="radio" name="tsc-radio" onclick="programmingParams.edit.coach.shirt =`XXL`" <%if(team.coach.shirt===`XXL`){%> <%="checked"%> <%}%>  > XXL
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+    <!---------------------------TEAM Leader------------------------->
+    <h3>Team Leader</h3>
+
+
+    <div class="row">
+        <div class="col">
+            <!-- Name input -->
+            <div class="form-outline">
+                <input type="text" id="name_tl"  value="<%=team.teamLeader.name%>" onchange="programmingParams.edit.teamLeader.name=this.value" class="form-control"/>
+                <label class="form-label" for="name_c">Name</label>
+            </div>
+        </div>
+        <!-- Phone input -->
+        <div class="col">
+            <div class="form-outline">
+                <input type="number" id="phone_tl"  value="<%=team.teamLeader.phone%>"  onchange="programmingParams.edit.teamLeader.phone=this.value" class="form-control"/>
+                <label class="form-label" for="phone_c">Phone</label>
+            </div>
+        </div>
+        <!-- Email input -->
+        <div class="col">
+            <div class="form-outline">
+                <input type="email" id="email_tl"  value="<%=team.teamLeader.email%>"  onchange="programmingParams.edit.teamLeader.email=this.value" class="form-control"/>
+                <label class="form-label" for="email_c">Email address</label>
+            </div>
+        </div>
+
+        <!-- Tshirt input -->
+        <div class="col">
+            T-Shirt Size
+            <div>
+
+                <label class="radio-inline-ts">
+                    <input type="radio" name="tls-radio" onclick="programmingParams.edit.teamLeader.shirt =`L`" <%if(team.teamLeader.shirt===`L`){%> <%="checked"%> <%}%>   > L
+                </label>
+                <label class="radio-inline-ts">
+                    <input type="radio" name="tls-radio" onclick="programmingParams.edit.teamLeader.shirt =`XL`" <%if(team.teamLeader.shirt===`XL`){%> <%="checked"%> <%}%>  > XL
+                </label>
+                <label class="radio-inline-ts">
+                    <input type="radio" name="tls-radio" onclick="programmingParams.edit.teamLeader.shirt =`XXL`" <%if(team.teamLeader.shirt===`XXL`){%> <%="checked"%> <%}%>  > XXL
+                </label>
+            </div>
+        </div>
+    </div>
+    <hr/>
+
+
+    <!---------------------------TEAM MEMBER 1------------------------->
+    <h3>Team Member 1</h3>
+
+
+    <div class="row">
+        <div class="col">
+            <!-- Name input -->
+            <div class="form-outline">
+                <input type="text" id="name_t1"  value="<%=team.teamMember1.name%>"   onchange="programmingParams.edit.teamMember1.name=this.value" class="form-control"/>
+                <label class="form-label" for="name_c">Name</label>
+            </div>
+        </div>
+        <!-- Phone input -->
+        <div class="col">
+            <div class="form-outline">
+                <input type="number" id="phone_t1" value="<%=team.teamMember1.phone%>" onchange="programmingParams.edit.teamMember1.phone=this.value" class="form-control"/>
+                <label class="form-label" for="phone_c">Phone</label>
+            </div>
+        </div>
+        <!-- Email input -->
+        <div class="col">
+            <div class="form-outline">
+                <input type="email" id="email_t1"  value="<%=team.teamMember1.email%>" onchange="programmingParams.edit.teamMember1.email=this.value" class="form-control"/>
+                <label class="form-label" for="email_c">Email address</label>
+            </div>
+        </div>
+
+        <!-- Tshirt input -->
+        <div class="col">
+            T-Shirt Size
+            <div>
+
+                <label class="radio-inline-ts">
+                    <input type="radio" name="t1s-radio" onclick="programmingParams.edit.teamMember1shirt =`L`" <%if(team.teamMember1.shirt===`L`){%> <%="checked"%> <%}%>   > L
+                </label>
+                <label class="radio-inline-ts">
+                    <input type="radio" name="t1s-radio" onclick="programmingParams.edit.teamMember1shirt =`XL`" <%if(team.teamMember1.shirt===`XL`){%> <%="checked"%> <%}%>  > XL
+                </label>
+                <label class="radio-inline-ts">
+                    <input type="radio" name="t1s-radio" onclick="programmingParams.edit.teamMember1shirt =`XXL`" <%if(team.teamMember1.shirt===`XXL`){%> <%="checked"%> <%}%>  > XXL
+                </label>
+            </div>
+        </div>
+    </div>
+    <hr/>
+
+    <!---------------------------TEAM MEMBER 2------------------------->
+    <h3>Team Member 2</h3>
+
+
+    <div class="row">
+        <div class="col">
+            <!-- Name input -->
+            <div class="form-outline">
+                <input type="text" id="name_t2" value="<%=team.teamMember2.name%>" onchange="programmingParams.edit.teamMember2.name=this.value" class="form-control"/>
+                <label class="form-label" for="name_c">Name</label>
+            </div>
+        </div>
+        <!-- Phone input -->
+        <div class="col">
+            <div class="form-outline">
+                <input type="number" id="phone_t2" value="<%=team.teamMember2.phone%>" onchange="programmingParams.edit.teamMember2.phone=this.value" class="form-control"/>
+                <label class="form-label" for="phone_c">Phone</label>
+            </div>
+        </div>
+        <!-- Email input -->
+        <div class="col">
+            <div class="form-outline">
+                <input type="email" id="email_t2" value="<%=team.teamMember2.email%>" onchange="programmingParams.edit.teamMember2.email=this.value" class="form-control"/>
+                <label class="form-label" for="email_c">Email address</label>
+            </div>
+        </div>
+
+        <!-- Tshirt input -->
+        <div class="col">
+            T-Shirt Size
+            <div>
+
+                <label class="radio-inline-ts">
+                    <input type="radio" name="t2s-radio" onclick="programmingParams.edit.teamMember2.shirt =`L`" <%if(team.teamMember2.shirt===`L`){%> <%="checked"%> <%}%>   > L
+                </label>
+                <label class="radio-inline-ts">
+                    <input type="radio" name="t2s-radio" onclick="programmingParams.edit.teamMember2.shirt =`XL`" <%if(team.teamMember2.shirt===`XL`){%> <%="checked"%> <%}%>  > XL
+                </label>
+                <label class="radio-inline-ts">
+                    <input type="radio" name="t2s-radio" onclick="programmingParams.edit.teamMember2.shirt =`XXL`" <%if(team.teamMember2.shirt===`XXL`){%> <%="checked"%> <%}%>  > XXL
+                </label>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <hr/>
+
+    <!--Selected-->
+    Selected:
+    <div>
+
+        <label class="radio-inline-ts">
+            <input type="radio" name="selection-radio" onclick="programmingParams.edit.selected =true" <%if(team.selected===true){%> <%="checked"%> <%}%>  > Yes
+        </label>
+        <label class="radio-inline-ts">
+            <input type="radio" name="selection-radio" onclick="programmingParams.edit.shirt = false" <%if(team.selected===false){%> <%="checked"%> <%}%> > No
+        </label>
+
+    </div>
+
+    <!--Paid-->
+    Paid
+    <div>
+
+        <label class="radio-inline-ts">
+            <input type="radio" name="payment-radio" onclick="programmingParams.edit.paid =true" <%if(team.paid===true){%> <%="checked"%> <%}%> > Yes
+        </label>
+        <label class="radio-inline-ts">
+            <input type="radio" name="payment-radio" onclick="programmingParams.edit.paid = false" <%if(team.paid===false){%> <%="checked"%> <%}%> > No
+        </label>
+
+    </div>
+
+
+
+
+    <button id="math-submit-register" class="btn btn-primary btn-block mb-4" data-dismiss="modal" onclick="editProgrammingTeam()" >Save Changes</button>
+
+    <div id="script_programming_team_edit" hidden>
+        <%=JSON.stringify(team)%>
+    </div>
+</div>
