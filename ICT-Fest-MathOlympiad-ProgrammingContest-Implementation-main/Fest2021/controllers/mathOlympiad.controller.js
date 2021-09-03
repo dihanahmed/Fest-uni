@@ -1,4 +1,5 @@
 const MathOlympiadUser = require("../models/MathOlympiadUser.model");
+const userMail = require("../mail");
 const createUser = (req, res) => {
     req.body.paid = false;
     req.body.selected = false;
